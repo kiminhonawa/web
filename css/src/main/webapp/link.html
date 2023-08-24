@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>CSS</title>
+	<style>
+        /*
+        pseudo selector(가상 선택자): 이벤트 또는 특정 조건을 만족하는 요소들을 찾을 때 사용하는 선택자.
+            - selector:pseudo-selector
+            - pseudo selector 종류
+                - visited: 방문했던 사이트.
+                - link: 방문하지 않았던 사이트.
+                - hover: 마우스가 요소 위에 있을 때.
+                - active: 마우스 버튼을 누르고 있을 때.
+                - nth-child(...): 조건을 만족하는 자식 요소를 찾을 때.
+                ...
+        */
+      
+        a#Link-naver {
+            border: 1px solid lightgray;
+            padding: 8px;
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        
+        a#Link-naver:hover {
+            color: blue;
+            text-decoration: underline;
+        }
+        
+        a#Link-naver:active {
+            color: red;
+           
+        }
+        
+          a#Link-daum {
+            display: inline-block;
+            text-decoration: none;
+            background-color: green;
+            color: white;
+            font-weight: bold;
+            padding: 4px 8px;
+            width: 56px; /* 가로 크기 */
+            text-align: center;
+        }
+        
+        /* CSS display 속성(property)
+            1. block: <div>, <p>, <h1>, <ul>, <li>, <table>, <header>, <main>, <footer>, <nav>, <aside>, ...
+                - 항상 새 줄에(이전 요소의 아래쪽에) 배치.
+                - width(가로), height(세로)를 변경할 수 있음.
+                - margin, padding을 변경할 수 있음.
+            2. inline: <span>, <strong>, <em>, <a>, ...
+                - 같은 줄(이전 요소의 오른쪽)에 배치.
+                - width, height를 변경할 수 없음.
+                - margin, padding을 변경할 수 있음.
+            3. inline-block: <img>
+                - inline 속성: 같은 줄(이전 요소의 오른쪽)에 배치.
+                - block 속성: width, height를 변경할 수 있음.
+            4. none: 화면에 표시(display)하지 않음. 요소가 차지하는 크기가 없음.
+        */
+    </style>
+    </head>
+	<body>
+		<h1>Link Style</h1>
+        <h2>Pseudo Selector</h2>
+        
+        <a id="Link-naver" href="https://www.naver.com/">Naver</a>
+        
+        <h2>Link Button</h2>
+        
+        <a id= "Link-daum" href="https://www.daum.net/">Daum</a>
+        
+	</body>
+</html>

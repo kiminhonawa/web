@@ -1,0 +1,45 @@
+body {
+    background-color: gray;
+    margin: 0;
+}
+
+#top {
+    background-color: black;
+    padding: 30px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-images {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo-images img:first-child {
+  width: 100px;
+  height: 100px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.logo-images img:last-child {
+  width: 100px;
+  height: 100px;
+  margin-left: 20px;
+  margin-right: 0;
+}
+
+h1.title {
+  font-size: 60px;
+  color: white;
+  margin: 0;
+}
+
+#bottom {
+ color: white;
+}

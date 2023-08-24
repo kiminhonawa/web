@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>CSS</title>
+        <style>
+            table#tbl-member, table#tbl-member th, table#tbl-member td {
+                border: 1px solid gray;
+                border-collapse: collapse;           
+            }
+             table#tbl-post {
+                width: 100%;
+                border-collapse: collapse;
+             }
+             table#tbl-post, table#tbl-post th, table#tbl-post td {
+                border-bottom: 1px solid gray;
+                padding: 4px;
+             }
+             table#tbl-post th {
+                background-color: mediumseagreen;
+                color: white;
+                text-align: left;
+             }
+             table#tbl-post > tbody> tr:nth-child(even) {
+                background-color: lightgray;
+             }
+             table#tbl-post > tbody> tr:hover {
+                background-color: darkgray;
+             }
+        </style>
+	</head>
+	<body>
+		<h1>Table Style</h1>
+        <table id="tbl-member">
+            <caption>회원 정보</caption>
+            <thead>
+                <tr>
+                    <th>아이디</th>
+                    <th>비밀번호</th>
+                    <th>이메일</th>
+                </tr>   
+            </thead>
+            <tbody>
+                <tr>
+                    <td>admin</td>
+                    <td>admin</td>
+                    <td>admin@admin.com</td>
+                </tr>
+                <tr>
+                    <td>guest</td>
+                    <td>guest</td>
+                    <td>guest@guest.com</td>
+                </tr>
+                <tr>
+                    <td>test</td>
+                    <td>1234</td>
+                    <td>test@naver.com</td>
+                </tr>               
+            </tbody>
+        </table>     
+        
+        <hr />
+        
+        <table id="tbl-post">
+            <caption>자유 게시판</caption>
+            <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>제목</th>
+                    <th>작성자</th>
+                    <th>작성날짜</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>ㄱ</td>
+                    <td>가</td>
+                    <td>오늘</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>ㄴ</td>
+                    <td>나</td>
+                    <td>내일</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>ㄷ</td>
+                    <td>다</td>
+                    <td>어제</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>ㄹ</td>
+                    <td>라</td>
+                    <td>담주</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>ㅁ</td>
+                    <td>마</td>
+                    <td>저번주</td>
+                </tr>          
+            </tbody>
+        </table>
+        
+        
+        
+        
+        
+        
+           
+	</body>
+</html>
